@@ -66,7 +66,7 @@ export default function December2022() {
               </button>
             </div>
 
-            <div className="mb-10">
+            <div className="mt-16 h-full">
               <div className="flex flex-col items-start w-full">
                 <h4 className="mt-10 text-lg text-white/60">
                   Question {currentQuestion + 1} of {questions.length}
@@ -79,7 +79,7 @@ export default function December2022() {
                 {questions[currentQuestion].answerOptions.map((answer, index) => (
                   <div
                     key={index}
-                    className="text-sm flex items-center w-full py-4 pl-5 m-2 ml-0 space-x-2 border-2 cursor-pointer border-white/10 rounded-xl bg-white/5"
+                    className="text-sm flex items-center w-full py-3 pl-5 m-2 ml-0 space-x-2 border-2 cursor-pointer border-white/10 rounded-full bg-white/5"
                     onClick={(e) => handleAnswerOption(answer.answer)}
                   >
                     <input
