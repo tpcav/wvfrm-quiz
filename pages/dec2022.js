@@ -68,10 +68,10 @@ export default function December2022() {
 
             <div className="mt-10 h-full">
               <div className="flex flex-col items-start w-full">
-                <h4 className="mt-10 text-md text-white/60">
+                <h4 className="mt-10 text-md md:text-lg text-white/60">
                   Question {currentQuestion + 1} of {questions.length}
                 </h4>
-                <div className="mt-4 text-lg text-white mb-2">
+                <div className="mt-4 text-lg md:text-xl lg:text-xl text-white mb-2">
                   {questions[currentQuestion].question}
                 </div>
               </div>
@@ -79,7 +79,7 @@ export default function December2022() {
                 {questions[currentQuestion].answerOptions.map((answer, index) => (
                   <div
                     key={index}
-                    className="text-sm flex items-center w-full py-3 pl-4 m-2 ml-0 space-x-4 px-4 border-2 cursor-pointer border-white/10 rounded-full bg-white/5"
+                    className="text-xs md:text-sm lg:text-md flex items-center w-full py-3 pl-4 m-2 ml-0 space-x-4 px-4 border-2 cursor-pointer border-white/10 rounded-full bg-white/5"
                     onClick={(e) => handleAnswerOption(answer.answer)}
                   >
                     <input
