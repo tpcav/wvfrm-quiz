@@ -6,12 +6,12 @@ import Footer from "../dashboard/Footer";
 export default function Home() {
 
   return (
-    <div className="grid h-screen place-items-center px-6 bg-zinc-900 justify-center items-center">
+    <div className="">
       <Head>
         <title>WVFRM Quiz</title>
       </Head>
       <div className="p-4 m-2 rounded-lg">
-        <h1 className="text-3xl text-white font-bold">Waveform Podcast Trivia</h1>
+        <h1 className="text-3xl text-white font-bold">WVFRM Podcast Trivia</h1>
         <p className="mt-4 text-gray-500">Wacky quizzies complied from all of the&nbsp;
           <span><Link href="https://www.youtube.com/c/Waveform" className="underline text-red-400">Waveform Podcast </Link></span>
           trivia segments.</p>
