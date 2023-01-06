@@ -2,7 +2,7 @@
   {
     "question": "What is the name of the European Science Center where both the Higgs Bosson was discovered and the world wide web was invented?",
     "answerOptions": [
-      { "answer": "European Union Research Center(EURC)" },
+      { "answer": "European Union Research Center (EURC)" },
       { "answer": "European Organization for Nuclear Research (CERN)", "isCorrect": true},
       { "answer": "European Center for Nuclear Research (ECNR)"},
       { "answer": "European Organization of Science Research (EOSR)" }
@@ -192,6 +192,87 @@
       { "answer": "Nuddge", "isCorrect": true},
       { "answer": "Nuddgi" },
       { "answer": "Nudgee" }
+    ]
+  },
+  {
+    "question": "A company pronounced, '5OC' How is the start-up really spelled?",
+    "answerOptions": [
+      { "answer": "5osee" },
+      { "answer": "Fiveoc" },
+      { "answer": "Ooooc", "isCorrect": true},
+      { "answer": "5ocee" }
+    ]
+  },
+  {
+    "question": "AA data analytics platform that is pronounced, 'Ha-dupe' How is the start-up really spelled?",
+    "answerOptions": [
+      { "answer": "5osee" },
+      { "answer": "Fiveoc" },
+      { "answer": "Ooooc", "isCorrect": true},
+      { "answer": "5ocee" }
+    ]
+  },
+  {
+    "question": "Who in the studio has a birthday on July 1st?",
+    "answerOptions": [
+      { "answer": "Mariah" },
+      { "answer": "Adam" },
+      { "answer": "Ellis", "isCorrect": true},
+      { "answer": "Hayato" }
+    ]
+  },
+  {
+    "question": "Facebook was launched in 2004, Twitter debuted in 2006, but in 2011, which celebrity jointly bought MySpace?",
+    "answerOptions": [
+      { "answer": "Matt Damon" },
+      { "answer": "Bruno Mars" },
+      { "answer": "Jay-Z" },
+      { "answer": "Justin Timberlake", "isCorrect": true}
+    ]
+  },
+  {
+    "question": "When did Google Keep launch?",
+    "answerOptions": [
+      { "answer": "2012" },
+      { "answer": "2013", "isCorrect": true},
+      { "answer": "2014" },
+      { "answer": "2016" }
+    ]
+  },
+  {
+    "question": "Play sound. What operating system is this sound from?",
+    "answerOptions": [
+      { "answer": "Windows Vista" },
+      { "answer": "Windows XP", "isCorrect": true},
+      { "answer": "Windows 7" },
+      { "answer": "Windows 8" }
+    ]
+  },
+  {
+    "question": "Play sound. What operating system is this sound from?s",
+    "answerOptions": [
+      { "answer": "Playstation PSP" },
+      { "answer": "Xbox Original" },
+      { "answer": "Xbox 360", "isCorrect": true},
+      { "answer": "Xbox One" }
+    ]
+  },
+  {
+    "question": "Play sound. What operating system is this sound from?",
+    "answerOptions": [
+      { "answer": "Samsung Galaxy S", "isCorrect": true},
+      { "answer": "LG Smart Phone" },
+      { "answer": "iPhone 3GS" },
+      { "answer": "iPhone Game Center" }
+    ]
+  },
+  {
+    "question": "Play sound. What operating system is this sound from?",
+    "answerOptions": [
+      { "answer": "Playstation 1" },
+      { "answer": "Skype" },
+      { "answer": "Windows 8" },
+      { "answer": "Windows 10", "isCorrect": true}
     ]
   }
 ]

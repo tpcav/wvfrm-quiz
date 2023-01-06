@@ -9,13 +9,17 @@ export default function December2022() {
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
 
-  const handleAnswerOption = (answer) => {
+  function refresh(){
+    window.location.reload(true);
+  }
+
+  function handleAnswerOption(answer) {
     setSelectedOptions([
       (selectedOptions[currentQuestion] = { answerByUser: answer }),
     ]);
-      setSelectedOptions([...selectedOptions]);
-      console.log(selectedOptions);
-    };
+    setSelectedOptions([...selectedOptions]);
+    console.log(selectedOptions);
+  }
 
     const handlePrevious = () => {
       const prevQues = currentQuestion - 1;
@@ -52,10 +56,10 @@ export default function December2022() {
               <Link href="/">Home</Link>
             </button>         
             <button className="mb-10 w-20 py-3 bg-zinc-500 text-white font-medium rounded-lg shadow-sm border border-gray-300 focus-within:ring-2 focus-within:ring-red-500 focus-within:ring-offset-2 hover:border-gray-400">
-              <Link href="#">Restart</Link>
+              <input type="button" value="Restart" onClick={refresh}/>
             </button>
             <h1 className="text-3xl font-semibold text-center text-white">
-              Score: {score}/{questions.length}
+              Score: {score}/{questions.length} questions
             </h1>
           </div>
         ) : (
