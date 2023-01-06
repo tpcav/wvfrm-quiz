@@ -38,11 +38,11 @@ const people = [
 
 export default function QuizList() {
   return (
-    <div className="mt-10 bg-zinc-800 p-4 rounded-lg pb-8">
+    <div className="mt-10 rounded-lg pb-8 w-full">
       <div className="">
         <h1 className="text-white text-2xl font-bold mt-2 mb-6 text-center">Choose Quiz</h1>
       </div>
-      <div className="mt-4 grid grid-cols-2 gap-6 sm:grid-cols-2">
+      <div className="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2">
         {people.map((person) => (
           <div
             key={person.email}
