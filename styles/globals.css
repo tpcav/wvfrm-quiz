@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  background-color: rgba(24,24,28,255);
+}
+
 input[type="radio"]:after {
   width: 24px;
   height: 24px;
