@@ -1,38 +1,197 @@
 [
   {
-    "question": "What type of framework is Next.js?",
+    "question": "What is the name of the European Science Center where both the Higgs Bosson was discovered and the world wide web was invented?",
     "answerOptions": [
-      { "answer": "Frontend" },
-      { "answer": "Backend" },
-      { "answer": "FullStack", "isCorrect": true },
-      { "answer": "None of the above" }
+      { "answer": "European Union Research Center(EURC)" },
+      { "answer": "European Organization for Nuclear Research (CERN)", "isCorrect": true},
+      { "answer": "Science Research Center for Nuclear Research (SRCNR)"},
+      { "answer": "European Organization of Science Research (EOSR)" }
     ]
   },
   {
-    "question": "When was Next.js released?",
+    "question": "In 2017, Dara Khosrowshahi became Uber's second CEO. What company was he CEO of before Uber?",
     "answerOptions": [
-      { "answer": "20 September 2019" },
-      { "answer": "14 January 2017" },
-      { "answer": "25 October 2016", "isCorrect": true },
-      { "answer": "28 March 2018" }
+      { "answer": "Expedia", "isCorrect": true},
+      { "answer": "Hotels.com" },
+      { "answer": "Trivago" },
+      { "answer": "Bookings.com" }
     ]
   },
   {
-    "question": "Which CSS Framework are we using?",
+    "question": "Airtags, Apple Home Pod, iPhone 11, Air Pods Pro 2nd gen. What chipset do these devices have in common?",
     "answerOptions": [
-      { "answer": "Bootstrap" },
-      { "answer": "TailwindCSS", "isCorrect": true },
-      { "answer": "Chakra UI" },
-      { "answer": "Bulma CSS" }
+      { "answer": "H1 Chip" },
+      { "answer": "U2 Chip" },
+      { "answer": "U1 Chip", "isCorrect": true },
+      { "answer": "H2 Chip" }
     ]
   },
   {
-    "question": "Which class in Tailwind is used to set flex direction of column?",
+    "question": "Samsung Galaxy Galaxy S21, Samsung Galaxy Z-fold 3,  Asus Zenfone 8, Oppo Find Xs Pro. What chipset do these devices have in common?",
     "answerOptions": [
-      { "answer": "col" },
-      { "answer": "col-flex" },
-      { "answer": "flex-col", "isCorrect": true },
-      { "answer": "None of the above" }
+      { "answer": "Snapdragon 8 Gen 1" },
+      { "answer": "Snapdragon 888", "isCorrect": true },
+      { "answer": "Snapdragon 888+" },
+      { "answer": "Snapdragon 700" }
+    ]
+  },
+  {
+    "question": "Lenovo Ideapad Yoga 11 Ultrabook, Google Nexus 7 Tablet (2012), Microsoft Surface RT, Acer Tab a7000. What chipset do these devices have in common?",
+    "answerOptions": [
+      { "answer": "Intel Celeron" },
+      { "answer": "Snapdragon 700" },
+      { "answer": "Snapdragon 808" },
+      { "answer": "Nvidia Tegra 3", "isCorrect": true}
+    ]
+  },
+  {
+    "question": "iPhone 3G, Sony Experia X1, Google G1 Blackberry Storm. What year were all of the devices released?",
+    "answerOptions": [
+      { "answer": "2006" },
+      { "answer": "2007" },
+      { "answer": "2008", "isCorrect": true },
+      { "answer": "2011" }
+    ]
+  },
+  {
+    "question": "Sony Vaio Pro 13, Lenovo Ideapad Yoga 2 Pro, Acer C720 Chromebook, HP Chromebook 11. What year were all of the devices released?",
+    "answerOptions": [
+      { "answer": "2011" },
+      { "answer": "2013", "isCorrect": true},
+      { "answer": "2016" },
+      { "answer": "2018" }
+    ]
+  }, 
+  {
+    "question": "One Plus 5, Samsung Galaxy Tab S3, Beats X. What year were all of the devices released?",
+    "answerOptions": [
+      { "answer": "2014" },
+      { "answer": "2016" },
+      { "answer": "2017", "isCorrect": true},
+      { "answer": "2018" }
+    ]
+  },
+  {
+    "question": "Ellis (Fake definition) or Apple? Soup (definition) - an individual file database on Apple Newton.",
+    "answerOptions": [
+      { "answer": "Ellis" },
+      { "answer": "Apple", "isCorrect": true}
+    ]
+  },
+  {
+    "question": "Ellis (Fake definition) or Apple? iLife (definition) Software suite that included iTunes, iMovie, iPhoto, iDvD, iWeb, and Garage Band.",
+    "answerOptions": [
+      { "answer": "Ellis" },
+      { "answer": "Apple", "isCorrect": true}
+    ]
+  },
+  {
+    "question": "Ellis (fake definition) or Apple? Quick Print (definition) - Printer protocol that worked over ether talk.",
+    "answerOptions": [
+      { "answer": "Ellis", "isCorrect": true},
+      { "answer": "Apple" }
+    ]
+  },
+  {
+    "question": "Ellis (fake definition) or Apple? Ethertalk (definition) - Ethernet implementation of Apple Talk.",
+    "answerOptions": [
+      { "answer": "Ellis" },
+      { "answer": "Apple", "isCorrect": true}
+    ]
+  },
+  {
+    "question": "Ellis (fake definition) or Apple? Bonjour (definition) - Zero Configuration Networking.",
+    "answerOptions": [
+      { "answer": "Ellis" },
+      { "answer": "Apple", "isCorrect": true}
+    ]
+  },
+  {
+    "question": "Ellis (fake definition) or Apple? AirPort Ultra (definition) - Apple released an AirPort router to hook up to MacBooks. They also released a pro version called the AirPort Ultra. This was the first Apple Product to include Ultra in the branding.",
+    "answerOptions": [
+      { "answer": "Ellis", "isCorrect": true},
+      { "answer": "Apple" }
+    ]
+  },
+  {
+    "question": "One of the founders is Chad Hurley. The company is ______?",
+    "answerOptions": [
+      { "answer": "Hurley" },
+      { "answer": "Instagram" },
+      { "answer": "YouTube", "isCorrect": true},
+      { "answer": "Vans" }
+    ]
+  },
+  {
+    "question": "One of the founders is Lee Byung-Chul. The company is ______?",
+    "answerOptions": [
+      { "answer": "Motorola" },
+      { "answer": "LG Electronics" },
+      { "answer": "Sony"},
+      { "answer": "Samsung", "isCorrect": true}
+    ]
+  },
+  {
+    "question": "One of the founders is Ronald Wayne. The company is ______?",
+    "answerOptions": [
+      { "answer": "Polaroid" },
+      { "answer": "Apple", "isCorrect": true},
+      { "answer": "Qualcomm" },
+      { "answer": "Motorola" }
+    ]
+  },
+  {
+    "question": "Two of the founders are Paul Galvin & Joseph Galvin. The company is ______?",
+    "answerOptions": [
+      { "answer": "Microsoft" },
+      { "answer": "Motorola", "isCorrect": true},
+      { "answer": "IBM" },
+      { "answer": "Netgear" }
+    ]
+  },
+  {
+    "question": "A platform for users to take inventory of their belongings that is pronounced, 'Bought.' How is the start-up really spelled?",
+    "answerOptions": [
+      { "answer": "Griid" },
+      { "answer": "Gridd" },
+      { "answer": "Gryd" },
+      { "answer": "Grydd", "isCorrect": true}
+    ]
+  },
+  {
+    "question": "A software development company specializing in supply chain technology that is pronounced, 'Grid.' How is the start-up really spelled?",
+    "answerOptions": [
+      { "answer": "Microsoft" },
+      { "answer": "Motorola", "isCorrect": true},
+      { "answer": "IBM" },
+      { "answer": "Netgear" }
+    ]
+  },
+  {
+    "question": "Add-on email analytics service that is pronounced, 'Zobney.' How is the start-up really spelled?",
+    "answerOptions": [
+      { "answer": "Zombne" },
+      { "answer": "Xombni" },
+      { "answer": "Zobne" },
+      { "answer": "Xobni", "isCorrect": true}
+    ]
+  },
+  {
+    "question": "Fuse network-powered innovative payments and awards technology that is pronounced, 'People.' How is the start-up really spelled?",
+    "answerOptions": [
+      { "answer": "Pipol" },
+      { "answer": "Peepl", "isCorrect": true},
+      { "answer": "Pepul" },
+      { "answer": "Netgear" }
+    ]
+  },
+  {
+    "question": "A platform for people struggling with depression that is pronounced, 'Nudge.' How is the start-up really spelled?",
+    "answerOptions": [
+      { "answer": "Nudj" },
+      { "answer": "Nuddge", "isCorrect": true},
+      { "answer": "Nuddgi" },
+      { "answer": "Nudgee" }
     ]
   }
 ]
