@@ -13,7 +13,7 @@ export default function Home() {
         <div className="text-left">
           <h1 className="text-3xl text-white font-bold">WVFRM Podcast Trivia</h1>
           <p className="mt-4 text-gray-500">A wacky trivia set complied from all of the&nbsp;
-            <span><Link href="https://www.youtube.com/c/Waveform" className="underline text-red-400">Waveform Podcast </Link></span>
+            <span><Link href="https://www.youtube.com/c/Waveform" className="underline text-red-400">Waveform Podcast</Link></span>
             trivia segments.
           </p>
         </div>
