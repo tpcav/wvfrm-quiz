@@ -91,7 +91,7 @@ export default function December2022() {
                         selectedOptions[currentQuestion]?.answerByUser
                       }
                       onChange={(e) => handleAnswerOption(answer.answer)}
-                      className="w-6 h-6bg-black"
+                      className="w-6 h-6 bg-black"
                     />
                     <p className="ml-20 text-white">{answer.answer}</p>
                   </div>
