@@ -1,7 +1,6 @@
 import Head from "next/head";
 import QuizList from "../dashboard/QuizList";
 import Link from "next/link";
-import Footer from "../dashboard/Footer";
 
 export default function Home() {
 
@@ -21,7 +20,6 @@ export default function Home() {
         
         <QuizList/>
       </div>
-      <Footer/>
     </div>
   );
 }
