@@ -38,7 +38,7 @@ const people = [
 
 export default function QuizList() {
   return (
-    <div className="mt-10 rounded-lg pb-8 w-full">
+    <div className="mt-10 rounded-lg pb-8 w-full md:mt-36 lg:mt-36">
       <div className="">
         <h1 className="text-white text-2xl font-bold mt-2 mb-6 text-center">Choose Quiz</h1>
       </div>

@@ -42,7 +42,7 @@ export default function December2022() {
   };
 
   return (
-    <div className="flex flex-col w-screen px-12 h-screen justify-center items-center bg-zinc-900">
+    <div className="flex flex-col w-screen p-4 h-screen justify-center items-center bg-zinc-900">
       <Head>
         <title>WVFRM Quiz - Dec 2022</title>
       </Head>
