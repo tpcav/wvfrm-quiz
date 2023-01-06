@@ -4,7 +4,7 @@
     "answerOptions": [
       { "answer": "European Union Research Center(EURC)" },
       { "answer": "European Organization for Nuclear Research (CERN)", "isCorrect": true},
-      { "answer": "Science Research Center for Nuclear Research (SRCNR)"},
+      { "answer": "European Center for Nuclear Research (ECNR)"},
       { "answer": "European Organization of Science Research (EOSR)" }
     ]
   },
