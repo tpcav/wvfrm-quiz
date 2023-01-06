@@ -152,19 +152,19 @@
   {
     "question": "A platform for users to take inventory of their belongings that is pronounced, 'Bought.' How is the start-up really spelled?",
     "answerOptions": [
-      { "answer": "Griid" },
-      { "answer": "Gridd" },
-      { "answer": "Gryd" },
-      { "answer": "Grydd", "isCorrect": true}
+      { "answer": "Baut" },
+      { "answer": "Bougt" },
+      { "answer": "Bawte", "isCorrect": true },
+      { "answer": "Boaught" }
     ]
   },
   {
     "question": "A software development company specializing in supply chain technology that is pronounced, 'Grid.' How is the start-up really spelled?",
     "answerOptions": [
-      { "answer": "Baut" },
-      { "answer": "Bougt" },
-      { "answer": "Bawte", "isCorrect": true },
-      { "answer": "Boaught" }
+      { "answer": "Griid" },
+      { "answer": "Gridd" },
+      { "answer": "Gryd" },
+      { "answer": "Grydd", "isCorrect": true}
     ]
   },
   {
