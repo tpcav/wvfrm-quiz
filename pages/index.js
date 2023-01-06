@@ -6,7 +6,7 @@ import Footer from "../dashboard/Footer";
 export default function Home() {
 
   return (
-    <div className="mb-12 flex flex-col w-screen px-5 h-screen bg-zinc-900 justify-center items-center">
+    <div className="mb-12 flex flex-col w-screen px-5 h-screen fixed bg-zinc-900 justify-center items-center">
       <Head>
         <title>WVFRM Quiz</title>
       </Head>
@@ -17,8 +17,6 @@ export default function Home() {
           trivia segments.</p>
         <QuizList/>
       </div>
-
-      <Footer/>
 
     </div>
   );
