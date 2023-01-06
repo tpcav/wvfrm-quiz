@@ -55,7 +55,7 @@ export default function December2022() {
               <Link href="#">Restart</Link>
             </button>
             <h1 className="text-3xl font-semibold text-center text-white">
-              You scored {score} out of {questions.length}
+              Score: {score}/{questions.length}
             </h1>
           </div>
         ) : (
