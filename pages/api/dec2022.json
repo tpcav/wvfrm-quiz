@@ -161,10 +161,10 @@
   {
     "question": "A software development company specializing in supply chain technology that is pronounced, 'Grid.' How is the start-up really spelled?",
     "answerOptions": [
-      { "answer": "Microsoft" },
-      { "answer": "Motorola", "isCorrect": true},
-      { "answer": "IBM" },
-      { "answer": "Netgear" }
+      { "answer": "Baut" },
+      { "answer": "Bougt" },
+      { "answer": "Bawte", "isCorrect": true },
+      { "answer": "Boaught" }
     ]
   },
   {
