@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const people = [
   {
-    name: 'December 2022',
+    name: 'December',
     quizUrl: './dec2022',
     email: 'leslie.alexander@example.com',
     role: '22 questions',
@@ -10,7 +10,7 @@ const people = [
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
-    name: 'November 2022',
+    name: 'November',
     quizUrl: './dec2022',
     email: 'leslie.alexander@example.com',
     role: '20 questions',
@@ -18,7 +18,7 @@ const people = [
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
-    name: 'October 2022',
+    name: 'October',
     quizUrl: './dec2022',
     email: 'leslie.alexander@example.com',
     role: '25 questions',
@@ -26,7 +26,7 @@ const people = [
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
   },
   {
-    name: 'September 2022',
+    name: 'September',
     quizUrl: './dec2022',
     email: 'leslie.alexander@example.com',
     role: '25 questions',
@@ -38,7 +38,7 @@ const people = [
 
 export default function QuizList() {
   return (
-    <div className="mt-10 bg-zinc-800 p-6 rounded-lg pb-8">
+    <div className="mt-10 bg-zinc-800 p-4 rounded-lg pb-8">
       <div className="">
         <h1 className="text-white text-2xl font-bold mt-2 mb-6 text-center">Choose Quiz</h1>
       </div>
