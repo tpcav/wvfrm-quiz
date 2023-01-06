@@ -12,7 +12,7 @@ const people = [
   },
   {
     name: 'November',
-    quizUrl: './dec2022',
+    quizUrl: '/',
     email: 'leslie.alexander@example.com',
     role: 'Coming soon...',
     imageUrl:
@@ -20,7 +20,7 @@ const people = [
   },
   {
     name: 'October',
-    quizUrl: './dec2022',
+    quizUrl: '/',
     email: 'leslie.alexander@example.com',
     role: 'Coming soon...',
     imageUrl:
@@ -28,7 +28,7 @@ const people = [
   },
   {
     name: 'September',
-    quizUrl: './dec2022',
+    quizUrl: '/',
     email: 'leslie.alexander@example.com',
     role: 'Coming soon...',
     imageUrl:
