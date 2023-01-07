@@ -68,7 +68,7 @@ export default function December2022() {
         </Head>
         {showScore ? (
       <div className="flex flex-col w-screen p-4 h-screen justify-center items-center bg-zinc-900">
-        <div className="fixed top-0 p-6 text-left bg-zinc-900 w-full z-20">
+        <div className="fixed top-0 p-4 text-left bg-zinc-900 w-full z-20">
           <div className="flex w-full mt-4">
             <button className="mb-2 mr-4 w-20 py-2 bg-zinc-500 text-white font-medium rounded-lg shadow-sm border border-gray-300 focus-within:ring-2 focus-within:ring-red-500 focus-within:ring-offset-2 hover:border-gray-400">
               <Link href="/">Home</Link>
@@ -134,7 +134,7 @@ export default function December2022() {
   </div>
 ) : (
           <>
-            <div className="fixed top-0 p-6 text-left w-full z-20">
+            <div className="fixed top-0 p-4 text-left w-full z-20">
               <div className="flex w-full mt-4">
                 <button className="mb-2 mr-4 w-20 py-2 bg-zinc-500 text-white font-medium rounded-lg shadow-sm border border-gray-300 focus-within:ring-2 focus-within:ring-red-500 focus-within:ring-offset-2 hover:border-gray-400">
                   <Link href="/">Home</Link>
