@@ -2,6 +2,7 @@ import questions from "./api/dec2022.json";
 import Head from "next/head";
 import { useState } from "react";
 import Link from "next/link";
+import { AiFillPlayCircle } from 'react-icons/ai';
 
 export default function December2022() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -85,11 +86,9 @@ export default function December2022() {
         </h1>
         {questions.map((question, index) => {
           const userAnswer = selectedOptions[index]?.answerByUser;
-          const correctAnswer = question.answerOptions.find(
-            (option) => option.isCorrect
-          ).answer;
+
           return (
-            <div key={question.id} className="text-lg md:text-xl lg:text-2xl text-white/60 font-semibold">
+            <div key={question.id} className="text-lg md:text-xl lg:text-2xl text-white/60 font-semibold w-full">
               <div className="h-full">
                 <div className="flex flex-col items-start w-full">
                   <h4 className="mt-10 text-md md:text-lg text-white/60">
@@ -99,13 +98,13 @@ export default function December2022() {
                     {question.question}
                   </div>
                 </div>
-                <div className="flex flex-col w-full">
+                <div className="flex flex-col w-100">
                 {question.answerOptions.map((answer, i) => (
                     <div
                       key={i}
-                      className={`text-xs md:text-sm lg:text-md flex items-center w-full py-3 pl-4 m-2 ml-0 space-x-4 px-4 border-2 cursor-pointer border-white/10 rounded-full bg-${
+                      className={`text-xs md:text-sm lg:text-md flex items-center w-100 py-3 pl-4 m-2 ml-0 space-x-4 px-4 border-2 cursor-pointer border-white/10 rounded-full bg-${
                         answer.answer === userAnswer && !answer.isCorrect
-                          ? 'red-500'
+                          ? 'red-100'
                           : 'white/5'
                       }`}
                     >
@@ -114,20 +113,20 @@ export default function December2022() {
                         name={answer.answer}
                         value={answer.answer}
                         checked={answer.answer === userAnswer}
-                        onChange={(e) => handleAnswerOption(answer.answer)}
                         className="w-6 h-6 bg-black"
                       />
-                      <p className="ml-20 text-white">{answer.answer}</p>
+                      <p className="ml-20 text-white w-full">{answer.answer}</p>
                       {answer.isCorrect ? (
-                        <span className="text-green-500"> (Correct)</span>
+                        <span className="text-green-500 bg-green-200 p-1 px-2 rounded-full">Correct</span>
                       ) : userAnswer === answer.answer ? (
-                        <span className="text-red-500"> (Incorrect)</span>
+                        <span className="text-red-500 bg-red-200 p-1 px-2 rounded-full">Incorrect</span>
                       ) : null}
                     </div>
                   ))}
                 </div>
               </div>
             </div>
+            
           );
         })}
       </div>
@@ -148,8 +147,9 @@ export default function December2022() {
                 <h4 className="mt-10 text-md md:text-lg text-white/60 font-bold">
                   Question {currentQuestion + 1} of {questions.length}
                 </h4>
-                <div className="mt-4 text-md md:text-lg lg:text-xl text-white mb-2 font-bold">
-                  {questions[currentQuestion].question}
+                <div className="inline mt-4 text-md md:text-lg lg:text-xl text-white mb-2 font-bold">
+                    {questions[currentQuestion].question}
+                    {questions[currentQuestion].question}
                 </div>
               </div>
               <div className="flex flex-col w-full">
