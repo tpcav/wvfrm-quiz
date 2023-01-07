@@ -143,12 +143,12 @@ export default function December2022() {
               </div>
             </div>
 
-            <div className="mt-20 h-full w-full">
+            <div className="mt-14 h-full w-full">
               <div className="flex flex-col items-start w-full">
-                <h4 className="mt-10 text-md md:text-lg text-white/60">
+                <h4 className="mt-10 text-md md:text-lg text-white/60 font-bold">
                   Question {currentQuestion + 1} of {questions.length}
                 </h4>
-                <div className="mt-4 text-lg md:text-xl lg:text-xl text-white mb-2">
+                <div className="mt-4 text-md md:text-lg lg:text-xl text-white mb-2 font-bold">
                   {questions[currentQuestion].question}
                 </div>
               </div>
