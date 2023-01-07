@@ -207,7 +207,7 @@
     "question": "A data analytics platform that is pronounced, 'Ha-dupe' How is the start-up really spelled?",
     "answerOptions": [
       { "answer": "Hadup" },
-      { "answer": "Hadoop", "isCorrect": true},
+      { "answer": "Hadoop", "isCorrect": true },
       { "answer": "Haduupe" },
       { "answer": "Hadooop" }
     ]

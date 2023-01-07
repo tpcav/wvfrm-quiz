@@ -80,7 +80,7 @@ export default function December2022() {
         </div>
     
     <div className="mt-10 h-full z-0">
-      <div className="flex flex-col items-start w-full">
+      <div className="flex flex-col items-center w-full ">
         <h1 className="text-3xl font-semibold text-center text-white mt-20">
           Score: {score}/{questions.length}
         </h1>
@@ -88,7 +88,7 @@ export default function December2022() {
           const userAnswer = selectedOptions[index]?.answerByUser;
 
           return (
-            <div key={question.id} className="text-lg md:text-xl lg:text-2xl text-white/60 font-semibold w-full">
+            <div key={question.id} className="text-lg md:text-xl lg:text-2xl text-white/60 font-semibold w-full h-full w-full md:w-2/3 lg:w-1/2">
               <div className="h-full">
                 <div className="flex flex-col items-start w-full">
                   <h4 className="mt-10 text-md md:text-lg text-white/60">
@@ -133,7 +133,7 @@ export default function December2022() {
     </div>
   </div>
 ) : (
-          <>
+          <div className="mt-20 h-full flex flex-col w-full items-center">
             <div className="fixed top-0 p-4 text-left w-full z-20">
               <div className="flex w-full mt-4">
                 <button className="mb-2 mr-4 w-20 py-2 bg-zinc-500 text-white font-medium rounded-lg shadow-sm border border-gray-300 focus-within:ring-2 focus-within:ring-red-500 focus-within:ring-offset-2 hover:border-gray-400">
@@ -142,9 +142,10 @@ export default function December2022() {
               </div>
             </div>
 
-            <div className="mt-14 h-full w-full md:w-2/3 lg:w-1/2">
+            <div className="h-full w-full md:w-2/3 lg:w-1/2">
+                      
               <div className="flex flex-col items-start w-full">
-                <h4 className="mt-10 text-md md:text-lg text-white/60 font-bold">
+                <h4 className="text-md md:text-lg text-white/60 font-bold">
                   Question {currentQuestion + 1} of {questions.length}
                 </h4>
                 <div className="inline mt-4 text-md md:text-lg lg:text-xl text-white mb-2 font-bold">
@@ -173,6 +174,7 @@ export default function December2022() {
                   </div>
                 ))}
               </div>
+              
           </div>
           <div className="flex fixed bottom-0 mb-6 p-4 justify-between w-full md:w-2/3 lg:w-1/2 mt-2 text-white text-center">
                 <button
@@ -192,7 +194,7 @@ export default function December2022() {
                   {currentQuestion + 1 === questions.length ? "Submit" : "Next"}
                 </button>
               </div>
-        </>
+        </div>
       )}
     </div>
   );
