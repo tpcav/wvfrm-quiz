@@ -142,7 +142,7 @@ export default function December2022() {
               </div>
             </div>
 
-            <div className="mt-14 h-full w-full">
+            <div className="mt-14 h-full w-full md:w-2/3 lg:w-1/2">
               <div className="flex flex-col items-start w-full">
                 <h4 className="mt-10 text-md md:text-lg text-white/60 font-bold">
                   Question {currentQuestion + 1} of {questions.length}
@@ -174,7 +174,7 @@ export default function December2022() {
                 ))}
               </div>
           </div>
-          <div className="flex fixed bottom-0 mb-6 p-4 justify-between w-full mt-2 text-white text-center">
+          <div className="flex fixed bottom-0 mb-6 p-4 justify-between w-full md:w-2/3 lg:w-1/2 mt-2 text-white text-center">
                 <button
                   onClick={handlePrevious}
                   className="w-[49%] py-2 bg-red-400 font-medium rounded-lg border border-red-300 focus-within:ring-4 focus-within:ring-red-500 focus-within:ring-offset-2 hover:border-gray-400"
