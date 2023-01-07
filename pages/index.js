@@ -1,7 +1,6 @@
 import Head from "next/head";
 import QuizList from "../dashboard/QuizList";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Home() {
 
@@ -21,7 +20,7 @@ export default function Home() {
             &nbsp;trivia segments.
           </p>
         </div>
-        
+      
         <QuizList/>
       </div>
     </div>

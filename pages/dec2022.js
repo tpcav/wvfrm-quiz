@@ -8,6 +8,7 @@ export default function December2022() {
   const [selectedOptions, setSelectedOptions] = useState([]);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
+  const [questionsWithAnswers, setQuestionsWithAnswers] = useState([]);
 
   function refresh(){
     window.location.reload(true);
@@ -43,34 +44,106 @@ export default function December2022() {
       }
       setScore(newScore);
       setShowScore(true);
+    
+      const questionsWithAnswers = questions.map((question, index) => {
+        return {
+          ...question,
+          userAnswer: selectedOptions[index]?.answerByUser,
+          isCorrect: question.answerOptions.some(
+            (answer) => answer.isCorrect && answer.answer === selectedOptions[index]?.answerByUser
+          ),
+        };
+      });
+    
+      setQuestionsWithAnswers(questionsWithAnswers);
     };
+      
+
 
     return (
-      <div className="flex flex-col fixed w-screen p-4 h-screen justify-center items-center bg-zinc-900">
+      <div className="flex flex-col w-screen p-4 h-screen justify-center items-center bg-zinc-900">
         <Head>
           <title>WVFRM Quiz - Dec 2022</title>
         </Head>
         {showScore ? (
-          <div className="text-center">
-            <button className="mb-10 mr-4 w-20 py-3 bg-zinc-500 text-white font-medium rounded-lg shadow-sm border border-gray-300 focus-within:ring-2 focus-within:ring-red-500 focus-within:ring-offset-2 hover:border-gray-400">
+      <div className="flex flex-col w-screen p-4 h-screen justify-center items-center bg-zinc-900">
+        <div className="fixed top-0 p-6 text-left bg-zinc-900 w-full z-20">
+          <div className="flex w-full mt-4">
+            <button className="mb-2 mr-4 w-20 py-2 bg-zinc-500 text-white font-medium rounded-lg shadow-sm border border-gray-300 focus-within:ring-2 focus-within:ring-red-500 focus-within:ring-offset-2 hover:border-gray-400">
               <Link href="/">Home</Link>
-            </button>         
-            <button className="mb-10 w-20 py-3 bg-zinc-500 text-white font-medium rounded-lg shadow-sm border border-gray-300 focus-within:ring-2 focus-within:ring-red-500 focus-within:ring-offset-2 hover:border-gray-400">
-              <input type="button" value="Restart" onClick={refresh}/>
             </button>
-            <h1 className="text-3xl font-semibold text-center text-white">
-              Score: {score}/{questions.length} questions
-            </h1>
+            <button className="mb-2 w-20 py-2 bg-zinc-500 text-white font-medium rounded-lg shadow-sm border border-gray-300 focus-within:ring-2 focus-within:ring-red-500 focus-within:ring-offset-2 hover:border-gray-400" onClick={refresh}>
+              Restart
+            </button>
           </div>
-        ) : (
+        </div>
+    
+    <div className="mt-10 h-full z-0">
+      <div className="flex flex-col items-start w-full">
+        <h1 className="text-3xl font-semibold text-center text-white mt-20">
+          Score: {score}/{questions.length}
+        </h1>
+        {questions.map((question, index) => {
+          const userAnswer = selectedOptions[index]?.answerByUser;
+          const correctAnswer = question.answerOptions.find(
+            (option) => option.isCorrect
+          ).answer;
+          return (
+            <div key={question.id} className="text-lg md:text-xl lg:text-2xl text-white/60 font-semibold">
+              <div className="h-full">
+                <div className="flex flex-col items-start w-full">
+                  <h4 className="mt-10 text-md md:text-lg text-white/60">
+                    Question {index + 1} of {questions.length}
+                  </h4>
+                  <div className="mt-4 text-lg md:text-xl lg:text-xl text-white mb-2">
+                    {question.question}
+                  </div>
+                </div>
+                <div className="flex flex-col w-full">
+                {question.answerOptions.map((answer, i) => (
+                    <div
+                      key={i}
+                      className={`text-xs md:text-sm lg:text-md flex items-center w-full py-3 pl-4 m-2 ml-0 space-x-4 px-4 border-2 cursor-pointer border-white/10 rounded-full bg-${
+                        answer.answer === userAnswer && !answer.isCorrect
+                          ? 'red-500'
+                          : 'white/5'
+                      }`}
+                    >
+                      <input
+                        type="radio"
+                        name={answer.answer}
+                        value={answer.answer}
+                        checked={answer.answer === userAnswer}
+                        onChange={(e) => handleAnswerOption(answer.answer)}
+                        className="w-6 h-6 bg-black"
+                      />
+                      <p className="ml-20 text-white">{answer.answer}</p>
+                      {answer.isCorrect ? (
+                        <span className="text-green-500"> (Correct)</span>
+                      ) : userAnswer === answer.answer ? (
+                        <span className="text-red-500"> (Incorrect)</span>
+                      ) : null}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </div>
+) : (
           <>
-            <div className="fixed top-0 p-6 text-left">
-              <button className="mb-2 mr-4 w-20 py-2 bg-zinc-500 text-white font-medium rounded-lg shadow-sm border border-gray-300 focus-within:ring-2 focus-within:ring-red-500 focus-within:ring-offset-2 hover:border-gray-400">
-                <Link href="/">Home</Link>
-              </button>
+            <div className="fixed top-0 p-6 text-left w-full z-20">
+              <div className="flex w-full mt-4">
+                <button className="mb-2 mr-4 w-20 py-2 bg-zinc-500 text-white font-medium rounded-lg shadow-sm border border-gray-300 focus-within:ring-2 focus-within:ring-red-500 focus-within:ring-offset-2 hover:border-gray-400">
+                  <Link href="/">Home</Link>
+                </button>
+              </div>
             </div>
 
-            <div className="mt-10 h-full">
+            <div className="mt-20 h-full w-full">
               <div className="flex flex-col items-start w-full">
                 <h4 className="mt-10 text-md md:text-lg text-white/60">
                   Question {currentQuestion + 1} of {questions.length}
@@ -95,7 +168,7 @@ export default function December2022() {
                         selectedOptions[currentQuestion]?.answerByUser
                       }
                       onChange={(e) => handleAnswerOption(answer.answer)}
-                      className="w-6 h-6 bg-black"
+                      className="w-6 h-6"
                     />
                     <p className="ml-20 text-white">{answer.answer}</p>
                   </div>
