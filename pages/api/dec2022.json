@@ -204,12 +204,12 @@
     ]
   },
   {
-    "question": "AA data analytics platform that is pronounced, 'Ha-dupe' How is the start-up really spelled?",
+    "question": "A data analytics platform that is pronounced, 'Ha-dupe' How is the start-up really spelled?",
     "answerOptions": [
-      { "answer": "5osee" },
-      { "answer": "Fiveoc" },
-      { "answer": "Ooooc", "isCorrect": true},
-      { "answer": "5ocee" }
+      { "answer": "Hadup" },
+      { "answer": "Hadoop", "isCorrect": true},
+      { "answer": "Haduupe" },
+      { "answer": "Hadooop" }
     ]
   },
   {
@@ -240,8 +240,7 @@
     ]
   },
   {
-    "question": "What operating system is this sound from?",
-    "play": "www.google.com",
+    "question": "Play sound. What operating system is this sound from?",
     "answerOptions": [
       { "answer": "Windows Vista" },
       { "answer": "Windows XP", "isCorrect": true},

@@ -149,7 +149,6 @@ export default function December2022() {
                 </h4>
                 <div className="inline mt-4 text-md md:text-lg lg:text-xl text-white mb-2 font-bold">
                     {questions[currentQuestion].question}
-                    {questions[currentQuestion].question}
                 </div>
               </div>
               <div className="flex flex-col w-full">
